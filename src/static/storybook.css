@@ -5,3 +5,32 @@
   border: 1px solid hsl(0 0% 50%);
   box-sizing: border-box;
 }
+
+.utrecht-block-space-demo {
+  display: inline-block;
+  outline: 1px solid hsl(0 0% 50%);
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+}
+
+.utrecht-inline-space-demo {
+  display: inline-block;
+  outline: 1px solid hsl(0 0% 50%);
+  box-sizing: border-box;
+  background-color: red;
+  height: 1ex;
+}
+
+.utrecht-row-space-demo {
+  display: inline-block;
+  outline: 1px solid hsl(0 0% 50%);
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+}
+
+.utrecht-column-space-demo {
+  display: inline-block;
+  outline: 1px solid hsl(0 0% 50%);
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+}

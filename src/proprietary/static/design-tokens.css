@@ -72,7 +72,7 @@
   --utrecht-button-padding: 0.75rem 2.5rem 0.75rem 1rem;
 
   --utrecht-button-primary-action-background-color: var(--utrecht-blue-30);
-  --utrecht-button-primary-action-color: var(--utrecht-blue-30);
+  --utrecht-button-primary-action-color: var(--utrecht-white);
   --utrecht-button-primary-action-hover-background-color: var(--utrecht-blue-40);
   --utrecht-button-primary-action-hover-color: var(--utrecht-white);
   --utrecht-button-primary-action-disabled-background-color: var(--utrecht-grijs-licht);

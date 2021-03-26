@@ -65,3 +65,45 @@
 :root {
   --utrecht-font-weight: 400;
 }
+
+/**
+ * @tokens Utrecht / Space
+ * @presenter Spacing
+ */
+:root {
+  --utrecht-space-block-1: 0.25rem;
+  --utrecht-space-block-2: 0.5rem;
+  --utrecht-space-block-3: 1rem;
+  --utrecht-space-block-4: 1.5rem;
+  --utrecht-space-block-5: 2rem;
+  --utrecht-space-block-6: 4rem;
+  --utrecht-space-block-7: 8rem;
+  --utrecht-space-block-8: 16rem;
+
+  --utrecht-space-inline-1: 0.25rem;
+  --utrecht-space-inline-2: 0.5rem;
+  --utrecht-space-inline-3: 1rem;
+  --utrecht-space-inline-4: 1.5rem;
+  --utrecht-space-inline-5: 2rem;
+  --utrecht-space-inline-6: 4rem;
+  --utrecht-space-inline-7: 8rem;
+  --utrecht-space-inline-8: 16rem;
+
+  --utrecht-space-row-1: var(--utrecht-space-block-1);
+  --utrecht-space-row-2: var(--utrecht-space-block-2);
+  --utrecht-space-row-3: var(--utrecht-space-block-3);
+  --utrecht-space-row-4: var(--utrecht-space-block-4);
+  --utrecht-space-row-5: var(--utrecht-space-block-5);
+  --utrecht-space-row-6: var(--utrecht-space-block-6);
+  --utrecht-space-row-7: var(--utrecht-space-block-7);
+  --utrecht-space-row-8: var(--utrecht-space-block-8);
+
+  --utrecht-space-column-1: var(--utrecht-space-block-1);
+  --utrecht-space-column-2: var(--utrecht-space-block-2);
+  --utrecht-space-column-3: var(--utrecht-space-block-3);
+  --utrecht-space-column-4: var(--utrecht-space-block-4);
+  --utrecht-space-column-5: var(--utrecht-space-block-5);
+  --utrecht-space-column-6: var(--utrecht-space-block-6);
+  --utrecht-space-column-7: var(--utrecht-space-block-7);
+  --utrecht-space-column-8: var(--utrecht-space-block-8);
+}
