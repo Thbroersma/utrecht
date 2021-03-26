@@ -1,0 +1,36 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { MDXEmbedProvider } from "mdx-embed";
+
+import README from "./README.md";
+import "./button.css";
+
+<Meta
+  title="Components/Button"
+  parameters={{
+    status: "IN DEVELOPMENT",
+    notes: {
+      UX: README,
+      //Content: contentGuidelines,
+      //Accessibility: accessibilityGuidelines
+    },
+  }}
+/>
+
+# Demo
+
+<Canvas>
+  <Story name="Default">{`<div class="utrecht-button">Call to action</div>`}</Story>
+  <Story name="Primary action">{`<div class="utrecht-button utrecht-button--primary-action">Primary action</div>`}</Story>
+  <Story name="Secondary action">{`<div class="utrecht-button utrecht-button--secondary-action">Secondary action</div>`}</Story>
+  <Story name="Primary action + disabled">{`<div class="utrecht-button utrecht-button--primary-action utrecht-button--disabled">Disabled action</div>`}</Story>
+  <Story name="With icon">{`<div class="utrecht-button utrecht-button--primary">
+    <span class="utrecht-button__icon">X</span>
+    <span class="utrecht-button__label">Secondary action</span>
+</div>`}</Story>
+</Canvas>
+
+## Design Kit
+
+<MDXEmbedProvider>
+  <Figma title="Button" url="file/x" />
+</MDXEmbedProvider>

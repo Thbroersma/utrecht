@@ -1,0 +1,55 @@
+.utrecht-button {
+  padding-inline-start: var(--utrecht-button-padding-inline);
+  padding-inline-end: var(--utrecht-button-padding-inline);
+  padding-block-start: var(--utrecht-button-padding-block);
+  padding-block-end: var(--utrecht-button-padding-block);
+  border-radius: var(--utrecht-button-border-radius);
+}
+
+.utrecht-button--primary-action {
+  background-color: var(--utrecht-button-primary-action-background-color);
+  color: var(--utrecht-button-primary-action-color);
+}
+
+.utrecht-button--primary-action.utrecht-button--hover,
+.utrecht-button--primary-action:hover {
+  background-color: var(--utrecht-button-primary-action-hover-background-color);
+  color: var(--utrecht-button-primary-action-hover-color);
+}
+
+.utrecht-button--primary-action.utrecht-button--disabled {
+  background-color: var(--utrecht-button-primary-action-disabled-background-color);
+  color: var(--utrecht-button-primary-action-disabled-color);
+}
+
+.utrecht-button--secondary-action {
+  background-color: var(--utrecht-button-secondary-action-background-color);
+  color: var(--utrecht-button-secondary-action-color);
+  border-width: var(--utrecht-button-secondary-action-border-width);
+  border-style: solid;
+  border-color: var(--utrecht-button-secondary-action-border-color);
+}
+
+.utrecht-button--secondary-action.utrecht-button--hover,
+.utrecht-button--secondary-action:hover {
+  background-color: var(--utrecht-button-primary-action-hover-background-color);
+  color: var(--utrecht-button-secondary-action-hover-color);
+  border-color: var(--utrecht-button-secondary-action-hover-border-color);
+}
+
+.utrecht-button--secondary-action.utrecht-button--disabled {
+  background-color: var(--utrecht-button-secondary-action-disabled-background-color);
+  color: var(--utrecht-button-secondary-action-disabled-color);
+  border-color: var(--utrecht-button-secondary-action-disabled-border-color);
+}
+
+.utrecht-button--focus,
+.utrecht-button:focus {
+  padding-inline-start: calc(var(--utrecht-button-padding-inline) - var(--utrecht-button-focus-border-width));
+  padding-inline-end: calc(var(--utrecht-button-padding-inline) - var(--utrecht-button-focus-border-width));
+  padding-block-start: calc(var(--utrecht-button-padding-block) - var(--utrecht-button-focus-border-width));
+  padding-block-end: calc(var(--utrecht-button-padding-block) - var(--utrecht-button-focus-border-width));
+  border-width: var(--utrecht-button-focus-border-width);
+  border-style: solid;
+  border-color: var(--utrecht-button-focus-border-color);
+}
