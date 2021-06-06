@@ -1,27 +1,26 @@
-# Template
+# Utrecht Design System
 
-This design system is based on the architecture of the NL Design System POC
-For more info about that architecture or the progress of the POC, join the `#nl-design-system-developers` Slack via [codefor.nl](https://codefor.nl)!
-
-## About this template
-
-This template contains all relevant linting rules used by the NL Design System repository.
-It also contains the Storybook setup with two example components and two example general documentation page.
-Feel free to add or modify those documentation pages and use the example components as an initial template to create your own storybook components.
+This design system is based on the architecture of the NL Design System.
+For more info about that architecture or the progress of the POC, join the `#nl-design-system-developers` Slack via [codefor.nl](https://praatmee.codefor.nl)!
 
 ## Storybook
 
 ### Run Storybook on your computer
 
+If you don't have Git installed already:
+
 1. Open Terminal.
 2. Install homebrew by copy-pasting the following: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`. You will be prompted for your password for sudo access.
 3. Install GIT by copy-pasting the following into your terminal: `$ brew install git`.
+
+If you don't have a favourite code editor yet:
+
 4. Install VS Code [Visual Studio](https://code.visualstudio.com/) or your own favourite code editor.
 5. Clone the repository in VS Code [GitHub](https://github.com/nl-design-system/utrecht) or your own favourite code editor.
 6. In a terminal go to the repository folder and run `npm install` there.
 7. Check versions.
-   - In the terminal, run `node -v`. The version should be at least 14.X
-   - In the terminal, run `npm -v`. The version should be at least 6.X
+   - In the terminal, run `node -v`. The version should be at least 16.X
+   - In the terminal, run `npm -v`. The version should be at least 7.X
    - If the versions are not up to date, run 'npm install' again.
 8. Run storybook.
    - In the Terminal run `npm run storybook`
