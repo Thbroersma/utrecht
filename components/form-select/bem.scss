@@ -1,0 +1,43 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 Robbert Broersma
+ */
+
+@import "../focus/bem";
+
+.utrecht-select {
+  border-width: var(--utrecht-select-border-width);
+  border-bottom-width: var(--utrecht-select-border-bottom-width, var(--utrecht-select-border-width));
+  border-color: var(--utrecht-select-border-color);
+  border-radius: var(--utrecht-select-border-radius, 0);
+  border-style: solid;
+  color: var(--utrecht-select-color);
+  font-family: var(--utrecht-select-font-family);
+  font-size: var(--utrecht-select-font-size, 1em);
+  max-width: var(--utrecht-select-max-width);
+  padding-block-end: var(--utrecht-select-padding-block-end);
+  padding-block-start: var(--utrecht-select-padding-block-start);
+  padding-inline-end: var(--utrecht-select-padding-inline-end);
+  padding-inline-start: var(--utrecht-select-padding-inline-start);
+  width: 100%;
+}
+
+.utrecht-select:focus,
+.utrecht-select--focus {
+  @include utrecht-focus();
+}
+
+.utrecht-select--invalid {
+  border-color: var(--utrecht-select-invalid-border-color);
+  border-width: var(--utrecht-select-invalid-border-width);
+}
+
+.utrecht-select--disabled {
+  border-color: var(--utrecht-select-disabled-border-color);
+  color: var(--utrecht-select-disabled-color);
+}
+
+.utrecht-select--read-only {
+  border-color: var(--utrecht-select-read-only-border-color);
+  color: var(--utrecht-select-read-only-color);
+}
