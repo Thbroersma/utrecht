@@ -14,12 +14,19 @@
   },
   "sideEffects": false,
   "scripts": {
+    "build": "tsc -p .",
     "clean": "rimraf dist/"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/"
   ],
   "devDependencies": {
-    "rimraf": "3.0.2"
+    "@utrecht/web-component-library-stencil": "file:../web-component-library-stencil/",
+    "rimraf": "3.0.2",
+    "typescript": "4.3.5",
+    "vue": "3.1.5"
   }
 }
