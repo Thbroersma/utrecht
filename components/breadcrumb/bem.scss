@@ -55,3 +55,7 @@ ol.utrecht-breadcrumb__list {
 .utrecht-breadcrumb__link--focus {
   @include utrecht-focus;
 }
+
+/* stylelint-disable-next-line block-no-empty */
+.utrecht-breadcrumb__text {
+}

@@ -3,7 +3,7 @@
 Copyright (c) 2021 Robbert Broersma
 -->
 
-import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { ArgsTable, Meta, Story, Canvas } from "@storybook/addon-docs";
 import clsx from "clsx";
 
 <!-- Import component and component styles -->
@@ -14,19 +14,26 @@ import "./bem.scss";
 
 import README from "./README.md";
 
-export const Template = ({ items }) => `<nav class="utrecht-breadcrumb">
-  <ol class="utrecht-breadcrumb__list">${items
-    .map(
-      ({ href, title, current, focus }) => `
-    <li class="utrecht-breadcrumb__item">
+export const Template = ({ items, microdata }) => `<nav class="utrecht-breadcrumb">
+  <ol class="utrecht-breadcrumb__list"${
+    microdata ? ' itemscope itemtype="https://schema.org/BreadcrumbList"' : ""
+  }>${items
+  .map(
+    ({ href, title, current, focus }, index) => `
+    <li class="utrecht-breadcrumb__item"${
+      microdata ? ' itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"' : ""
+    }>
       <a class="${clsx(
         "utrecht-breadcrumb__link utrecht-link",
         current && "utrecht-link--current",
         focus && "utrecht-link--focus"
-      )}" href="${href}"${current ? 'aria-current="location"' : ""}>${title}</a>
+      )}" href="${href}"${current ? 'aria-current="location"' : ""}${microdata ? 'itemprop="item"' : ""}>
+      <span class="utrecht-breadcrumb__text"${microdata ? ' itemprop="name"' : ""}>${title}</span>
+      ${microdata ? `<meta itemprop="position" content="${index + 1}" />` : ""}
+    </a>
       </li>`
-    )
-    .join("\n")}
+  )
+  .join("\n")}
   </ol>
 </nav>`;
 
@@ -36,6 +43,10 @@ export const Template = ({ items }) => `<nav class="utrecht-breadcrumb">
     items: {
       description: "Menu items",
       control: "array",
+    },
+    microdata: {
+      description: "Microdata",
+      control: "boolean",
     },
   }}
   parameters={{
@@ -61,8 +72,11 @@ export const Template = ({ items }) => `<nav class="utrecht-breadcrumb">
         { href: "https://example.com/a/b/", title: "Afval" },
         { href: "https://example.com/a/b/c/", title: "Kliko's", current: true },
       ],
+      microdata: true,
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
+
+<ArgsTable story="Breadcrumb navigation" />
