@@ -1,0 +1,30 @@
+{
+  "utrecht": {
+    "breadcrumb": {
+      "divider": {
+        "inline-size": {
+          "value": "1px"
+        }
+      },
+      "item": {
+        "padding-block-start": {
+          "value": "{utrecht.space.block.xs.value}"
+        },
+        "padding-block-end": {
+          "value": "{utrecht.space.block.xs.value}"
+        },
+        "padding-inline-end": {
+          "value": "{utrecht.space.inline.lg.value}"
+        },
+        "padding-inline-start": {
+          "value": "{utrecht.space.inline.lg.value}"
+        }
+      },
+      "link": {
+        "color": {
+          "value": "{utrecht.color.black.value}"
+        }
+      }
+    }
+  }
+}

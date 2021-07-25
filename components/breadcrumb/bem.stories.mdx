@@ -1,0 +1,68 @@
+<!--
+@license EUPL-1.2
+Copyright (c) 2021 Robbert Broersma
+-->
+
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import clsx from "clsx";
+
+<!-- Import component and component styles -->
+
+import "./bem.scss";
+
+<!-- Import Docs -->
+
+import README from "./README.md";
+
+export const Template = ({ items }) => `<nav class="utrecht-breadcrumb">
+  <ol class="utrecht-breadcrumb__list">${items
+    .map(
+      ({ href, title, current, focus }) => `
+    <li class="utrecht-breadcrumb__item">
+      <a class="${clsx(
+        "utrecht-breadcrumb__link utrecht-link",
+        current && "utrecht-link--current",
+        focus && "utrecht-link--focus"
+      )}" href="${href}"${current ? 'aria-current="location"' : ""}>${title}</a>
+      </li>`
+    )
+    .join("\n")}
+  </ol>
+</nav>`;
+
+<Meta
+  title="Components/Breadcrumb navigation"
+  argTypes={{
+    items: {
+      description: "Menu items",
+      control: "array",
+    },
+  }}
+  parameters={{
+    docs: {
+      transformSource: (_src, { args }) => Template(args),
+    },
+    status: "IN DEVELOPMENT",
+    notes: {
+      UX: README,
+    },
+  }}
+/>
+
+# Breadcrumb navigation
+
+<Canvas>
+  <Story
+    name="Breadcrumb navigation"
+    args={{
+      items: [
+        { href: "https://example.com/", title: "Home" },
+        { href: "https://example.com/a/", title: "Wonen en leven" },
+        { href: "https://example.com/a/b/", title: "Afval" },
+        { href: "https://example.com/a/b/c/", title: "Kliko's", current: true },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

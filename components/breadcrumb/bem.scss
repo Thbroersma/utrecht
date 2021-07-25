@@ -1,0 +1,57 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 Robbert Broersma
+ */
+
+@import "../focus/bem";
+
+@mixin reset-ol {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.utrecht-breadcrumb {
+  --utrecht-link-hover-text-decoration: var(--utrecht-link-text-decoration);
+  --utrecht-link-focus-text-decoration: var(--utrecht-link-text-decoration);
+  --utrecht-link-visited-text-decoration: var(--utrecht-link-text-decoration);
+  --utrecht-link-color: var(--utrecht-breadcrumb-link-color, var(--utrecht-link-color));
+  --utrecht-link-hover-color: var(--utrecht-breadcrumb-link-color, var(--utrecht-link-color));
+  --utrecht-link-focus-color: var(--utrecht-breadcrumb-link-color, var(--utrecht-link-color));
+  --utrecht-link-visited-color: var(--utrecht-breadcrumb-link-color, var(--utrecht-link-color));
+
+  font-size: var(--utrecht-breadcrumb-font-size);
+  font-family: var(--utrecht-document-font-family, inherit);
+  text-transform: var(--utrecht-document-text-transform, inherit);
+}
+
+.utrecht-breadcrumb__list {
+  display: flex;
+  block-size: var(--utrecht-breadcrumb-block-size);
+}
+
+ol.utrecht-breadcrumb__list {
+  @include reset-ol;
+}
+
+.utrecht-breadcrumb__item {
+  block-size: 100%;
+}
+
+.utrecht-breadcrumb__item ~ .utrecht-breadcrumb__item {
+  margin-inline-start: var(--utrecht-breadcrumb-item-divider-inline-size);
+}
+
+.utrecht-breadcrumb__link {
+  background-color: silver;
+  padding-block-start: var(--utrecht-breadcrumb-item-padding-block-start, 8px);
+  padding-block-end: var(--utrecht-breadcrumb-item-padding-block-end, 8px);
+  padding-inline-start: var(--utrecht-breadcrumb-item-padding-inline-start, 8px);
+  padding-inline-end: var(--utrecht-breadcrumb-item-padding-inline-end, 8px);
+  display: block;
+}
+
+.utrecht-breadcrumb__link--focus {
+  @include utrecht-focus;
+}

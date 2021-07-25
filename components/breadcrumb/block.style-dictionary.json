@@ -1,0 +1,30 @@
+{
+  "utrecht": {
+    "breadcrumb": {
+      "block-size": {
+        "css": {
+          "syntax": "<length>",
+          "inherit": true
+        }
+      },
+      "font-family": {
+        "css": {
+          "syntax": "*",
+          "inherit": true
+        }
+      },
+      "font-size": {
+        "css": {
+          "syntax": "<length>",
+          "inherit": true
+        }
+      },
+      "text-transform": {
+        "css": {
+          "syntax": "inherit | none | uppercase",
+          "inherit": true
+        }
+      }
+    }
+  }
+}
