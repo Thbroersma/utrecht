@@ -4,6 +4,8 @@
  */
 
 .utrecht-table {
+  font-family: var(--utrecht-document-font-family);
+  font-size: var(--utrecht-table-font-size, var(--utrecht-document-font-size));
   border-collapse: collapse;
   width: 100%;
 }
@@ -25,6 +27,7 @@
 .utrecht-table__header {
   font-weight: var(--utrecht-table-header-font-weight);
   color: var(--utrecht-table-header-color);
+  background-color: var(--utrecht-table-header-background-color);
   text-transform: var(--utrecht-table-header-text-transform);
   vertical-align: bottom;
 }

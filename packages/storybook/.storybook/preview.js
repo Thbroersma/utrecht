@@ -2,13 +2,14 @@ import '@utrecht/design-tokens/dist/theme/index.css';
 import '@utrecht/design-tokens/dist/property.css';
 import '@utrecht/design-tokens/src/custom.scss';
 import '../../../components/document/bem.css';
+import '../../../../EigenTest/theme-switcher/style/index.scss'
 
 import React from 'react';
 import { addDecorator } from '@storybook/html';
 // import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 import { defineCustomElements } from '@utrecht/web-component-library-stencil';
 
-addDecorator((story) => `<div class="utrecht-document utrecht-theme">${story()}</div>`);
+addDecorator((story) => `<div class="utrecht-document rotterdam-theme">${story()}</div>`);
 defineCustomElements();
 
 // addParameters({
