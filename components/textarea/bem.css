@@ -4,6 +4,7 @@
  */
 
 .utrecht-textarea {
+  background-color: var(--utrecht-textarea-background-color);
   border-width: var(--utrecht-textarea-border-width);
   border-bottom-width: var(--utrecht-textarea-border-bottom-width, var(--utrecht-textarea-border-width));
   border-color: var(--utrecht-textarea-border-color);
