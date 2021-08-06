@@ -75,6 +75,12 @@
             "syntax": "<length>",
             "inherits": true
           }
+        },
+        "background-color": {
+          "css": {
+            "syntax": "<color>",
+            "inherits": true
+          }
         }
       },
       "heading": {

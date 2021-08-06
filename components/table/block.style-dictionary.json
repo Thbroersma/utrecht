@@ -13,6 +13,12 @@
           "inherits": true
         }
       },
+      "font-family": {
+        "css": {
+          "syntax": "*",
+          "inherits": true
+        }
+      },
       "margin-block-start": {
         "css": {
           "syntax": "<length>",
