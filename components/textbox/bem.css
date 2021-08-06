@@ -4,6 +4,7 @@
  */
 
 .utrecht-textbox {
+  background-color: var(--utrecht-textbox-background-color);
   border-width: var(--utrecht-textbox-border-width);
   border-bottom-width: var(--utrecht-textbox-border-bottom-width, var(--utrecht-textbox-border-width));
   border-color: var(--utrecht-textbox-border-color);
