@@ -4,7 +4,7 @@
  */
 
 .utrecht-table {
-  font-family: var(--utrecht-table-font-family);
+  font-family: var(--utrecht-document-font-family);
   font-size: var(--utrecht-table-font-size, var(--utrecht-document-font-size));
   border-collapse: collapse;
   width: 100%;

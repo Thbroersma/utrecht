@@ -1,0 +1,12 @@
+{
+  "utrecht": {
+    "checkbox": {
+      "border-color": {
+        "css": {
+          "syntax": "<color>",
+          "inherits": true
+        }
+      }
+    }
+  }
+}
