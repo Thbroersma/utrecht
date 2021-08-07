@@ -9,7 +9,7 @@ import { addDecorator } from '@storybook/html';
 // import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 import { defineCustomElements } from '@utrecht/web-component-library-stencil';
 
-addDecorator((story) => `<div class="utrecht-document rotterdam-theme">${story()}</div>`);
+addDecorator((story) => `<div class="utrecht-document utrecht-theme">${story()}</div>`);
 defineCustomElements();
 
 // addParameters({
