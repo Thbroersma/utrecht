@@ -5,6 +5,9 @@
 
 .utrecht-checkbox {
   border-color: var(--utrecht-checkbox-border-color);
+  /*
+  border-width: var(--thierry/utrecht-checkbox-border-width);
+  */
   /* reset native margin for input[type="checkbox"] */
   margin-block-start: 0;
   margin-block-end: 0;
