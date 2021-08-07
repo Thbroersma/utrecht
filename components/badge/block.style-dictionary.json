@@ -28,6 +28,12 @@
           "inherits": true
         }
       },
+      "font-size": {
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
       "padding-block": {
         "comment": "Default block padding for badge components",
         "css": {
